@@ -1,0 +1,15 @@
+# Compiled source code and log 
+*.exe 
+*.log 
+*.pyc 
+*.__pycache__
+
+#Pakage 
+
+*.gz
+*.tar 
+
+# data folder 
+Data 
+.vscode 
+
