@@ -2,8 +2,15 @@ from argparse import ArgumentParser
 import re
 from KPI_calculation.huawei_Kpi.drive_huawei_kpi_calc import run_huawei_lte_kpi_calc
 
+
 def read_configuration(config_file_path):
     config_dict = {}
+    input_folder = None
+    output_folder = None
+    filter_file_path = None
+    vendor = None
+    technology = None
+
     with open(config_file_path) as configob:
         for line in configob.readlines():
             if re.search(re.compile(r"^input_folder" , re.IGNORECASE), line):
